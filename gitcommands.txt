@@ -1,0 +1,160 @@
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ryanc>dd Desktop
+'dd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ryanc>cd Desktop
+
+C:\Users\ryanc\Desktop>cd GSB_544
+
+C:\Users\ryanc\Desktop\GSB_544>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is 60E0-35DF
+
+ Directory of C:\Users\ryanc\Desktop\GSB_544
+
+09/29/2023  11:50 AM    <DIR>          .
+09/29/2023  11:49 AM    <DIR>          ..
+09/29/2023  11:48 AM                 0 .Rhistory
+09/29/2023  11:48 AM            19,867 PerezPractice1_1.html
+09/29/2023  11:48 AM           140,552 PerezPractice1_1.ipynb
+09/29/2023  11:48 AM                50 README.md
+09/28/2023  02:32 PM           408,574 Week 2 LRM Continued.pdf
+               5 File(s)        569,043 bytes
+               2 Dir(s)  80,443,441,152 bytes free
+
+C:\Users\ryanc\Desktop\GSB_544>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Week 2 LRM Continued.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\ryanc\Desktop\GSB_544>git add --all
+
+C:\Users\ryanc\Desktop\GSB_544>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Week 2 LRM Continued.pdf
+
+
+C:\Users\ryanc\Desktop\GSB_544>git commit -m 'Ryan 1st commit'
+error: pathspec '1st' did not match any file(s) known to git
+error: pathspec 'commit'' did not match any file(s) known to git
+
+C:\Users\ryanc\Desktop\GSB_544>git commit -m 'ryans cummit'
+error: pathspec 'cummit'' did not match any file(s) known to git
+
+C:\Users\ryanc\Desktop\GSB_544>git commit
+Aborting commit due to empty commit message.
+
+C:\Users\ryanc\Desktop\GSB_544>git commit
+[main 69b1696] Ryans 1st commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Week 2 LRM Continued.pdf
+
+C:\Users\ryanc\Desktop\GSB_544>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\ryanc\Desktop\GSB_544>git log
+commit 69b16961e5741df97e31d4aae13cd88dd951687e (HEAD -> main)
+Author: rcperez1 <ryancharlesperez@gmail.com>
+Date:   Fri Sep 29 11:54:21 2023 -0700
+
+    Ryans 1st commit
+
+commit 5728fe5a165037ad02dc9d91934fdd39ccb23212 (origin/main, origin/HEAD)
+Author: rcperez1 <146013587+rcperez1@users.noreply.github.com>
+Date:   Fri Sep 29 11:31:05 2023 -0700
+
+    Add files via upload
+
+commit 725e052006de926f89c4a4aa81ae6b47b2ca8b92
+Author: rcperez1 <146013587+rcperez1@users.noreply.github.com>
+Date:   Fri Sep 29 11:08:10 2023 -0700
+
+    Add files via upload
+
+commit 02811781b7d2972abbb660ddabf08ae397f948ba
+Author: rcperez1 <ryancharlesperez@gmail.com>
+Date:   Wed Sep 27 09:51:34 2023 -0700
+
+    update readme
+
+commit 6ea4ea497c7c9d1de59685a061905f933de4a736
+Author: rcperez1 <146013587+rcperez1@users.noreply.github.com>
+Date:   Wed Sep 27 09:43:54 2023 -0700
+
+    Initial commit
+
+C:\Users\ryanc\Desktop\GSB_544>git push
+info: please complete authentication in your browser...
+
+C:\Users\ryanc\Desktop\GSB_544>git push
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 381.11 KiB | 34.65 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rcperez1/GSB_544.git
+   5728fe5..69b1696  main -> main
+
+C:\Users\ryanc\Desktop\GSB_544>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Week 2 LRM Continued.pdf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ryanc\Desktop\GSB_544>git add --all
+
+C:\Users\ryanc\Desktop\GSB_544>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Week 2 LRM Continued.pdf
+
+
+C:\Users\ryanc\Desktop\GSB_544>git commit -m "deleted 519 file"
+[main c5df891] deleted 519 file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Week 2 LRM Continued.pdf
+
+C:\Users\ryanc\Desktop\GSB_544>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 221 bytes | 221.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rcperez1/GSB_544.git
+   69b1696..c5df891  main -> main
+
+C:\Users\ryanc\Desktop\GSB_544>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\ryanc\Desktop\GSB_544>
